@@ -1,0 +1,16 @@
+a:
+  channel: 0
+  angle_min: 60
+  angle_max: 225
+  pwm_min: 207
+  pwm_max: 610
+b:
+  channel: 1
+  angle_min: -35
+  angle_max: 145
+  pwm_min: 564
+  pwm_max: 134
+c:
+  channel: 2
+  pwm_up: 250
+  pwm_down: 300

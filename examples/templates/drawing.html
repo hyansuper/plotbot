@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    <title>PlotBot drawing web app</title>
+  </head>
+  <body>
+  	<div id='msg'></div>
+    <canvas id='canv' width='500' height="275" style="border:1px black solid"></canvas>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script type="text/javascript" src="static/js/drawing.js"></script> 
+    <div>
+    	<button id='start' onclick="start()" disabled="true">开始</button>
+    	<button id='end' onclick="end()" disabled='true'>结束</button>
+    	<!--<button id='clear' onclick="confirm_clear()">清空</button>-->
+    </div>   
+  </body>
+</html>
