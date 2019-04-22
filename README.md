@@ -16,6 +16,7 @@ Dependency:
 
 How to use:
 
+    export PYTHONPATH=$PYTHONPATH:$pwd
     git clone https://github.com/hyansuper/plotbot
     cd plotbot
     change conf.yaml file according to your servo settings
