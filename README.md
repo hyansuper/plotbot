@@ -19,5 +19,6 @@ How to use:
     git clone https://github.com/hyansuper/plotbot
     cd plotbot
     change conf.yaml file according to your servo settings
+    cd examples
     run 'python web_app.py' or 'python sketch_app.py'
     then visit <pi_zero_ip_address>:5000
