@@ -12,7 +12,7 @@ Dependency:
 
     pip install pyyaml adafruit-pca9685 gpiozero flask flask-socketio
     git clone https://github.com/hyansuper/linedraw
-    git clone https://github.com/miguelgrinberg/flask-video-streaming
+    git clone https://github.com/hyansuper/flask_video_streaming
 
 How to use:
 
