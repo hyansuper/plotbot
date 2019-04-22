@@ -9,14 +9,15 @@ Hardware:
 * button X1
 
 Dependency: 
-* pip install pyyaml
-* pip install adafruit-pca9685
-* pip install gpiozero
-* pip install flask
-* pip install flask-socketio
 
-How to play:<br>
-&nbsp;&nbsp;cd plotbot<br>
-&nbsp;&nbsp;change conf.yaml file according to your servo settings<br>
-&nbsp;&nbsp;python webapp.py<br>
-&nbsp;&nbsp;then visit <pi_zero_ip_address>:5000<br>
+    pip install pyyaml adafruit-pca9685 gpiozero flask flask-socketio
+    git clone https://github.com/hyansuper/linedraw
+    git clone https://github.com/miguelgrinberg/flask-video-streaming
+
+How to use:
+
+    git clone https://github.com/hyansuper/plotbot
+    cd plotbot
+    change conf.yaml file according to your servo settings
+    run 'python web_app.py' or 'python sketch_app.py'
+    then visit <pi_zero_ip_address>:5000
