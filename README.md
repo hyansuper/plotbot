@@ -8,7 +8,7 @@ The [Line-us drawing robot](https://www.line-us.com/) is a much finer product th
 * raspberry pi zero w
 * Adafruit PCA9685 PWM servo controller
 * metal geared 9g servo X3
-* 10mm*4mm bearing X3
+* 10mm*4mm bearing X6
 * button X1
 
 ## Dependency: 
