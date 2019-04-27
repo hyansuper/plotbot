@@ -1,6 +1,6 @@
 # plotbot
 Python code for [Line-us clone](http://www.buildlog.net/blog/2017/02/a-line-us-clone/).
-After reading the post, I redesigned the model with Fusion360. You can download [3D model from Thingiverse]() or the Fusion360 file [here](https://a360.co/2Pvn2hH)
+After reading the post, I redesigned the model with Fusion360. You can download the Fusion360 file [here](https://a360.co/2Pvn2hH)
 
 The [Line-us drawing robot](https://www.line-us.com/) is a much finer product than this one.
 
