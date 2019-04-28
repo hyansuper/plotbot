@@ -34,7 +34,7 @@ def notify(broadcast=True):
 def background():
     global user_id, timestamp, background_run
     while background_run:
-        if user_id and (time() - timestamp > 60):
+        if user_id is not None and (time() - timestamp > 60):
             user_id = None
             bot.relax()
         sleep(10)
