@@ -26,5 +26,5 @@ The [Line-us drawing robot](https://www.line-us.com/) is a much finer product th
     then visit <pi_zero_ip_address>:5000
 
 ## Tips for 3D print:
-The stiffness of the arm greatly affects the output, to achieve good result, you'll need good quality bearings, and the 4 links making up the arm should be printed with 100% infill.
+The stiffness of the arm greatly affects the output, to achieve good result, you'll need good quality bearings, and the 4 links making up the arm should be printed with 100% infill.<br/>
 Also, the links need some sanding to fit in the bearings
