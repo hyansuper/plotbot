@@ -57,24 +57,24 @@ def up():
     emit('up', broadcast=True, include_self=False)
 
 @socketio.on('down')
-def down(x, y): 
+def down(p): 
     global timestamp
     timestamp = time()
-    bot.goto(x, y)
+    bot.lineto(p)
     sleep(.5)
     bot.down();
     sleep(.1)
-    lines.append([(x,y)])
-    emit('down', [x,y], broadcast=True, include_self=False)
+    lines.append([p])
+    emit('down', p, broadcast=True, include_self=False)
 
-@socketio.on('goto')
-def goto(x, y):
+@socketio.on('lineto')
+def lineto(p):
     global timestamp
     timestamp = time()
-    bot.goto(x,y)
+    bot.lineto(p)
     sleep(0.005)
-    lines[-1].append((x,y))
-    emit('goto', [x,y], broadcast=True, include_self=False)
+    lines[-1].append(p)
+    emit('lineto', p, broadcast=True, include_self=False)
 
 @socketio.on('disconnect')
 def disconnect():

@@ -27,13 +27,13 @@ def draw():
     lines = to_sketch(frame)
     for line in lines:
         line[0] = cam2bot(line[0])
-        bot.goto(line[0][0], line[0][1])
+        bot.lineto(line[0])
         sleep(.3)
         bot.down()
         sleep(.1)
         for p in line[1:]:
             p = cam2bot(p)
-            bot.goto(p[0], p[1])
+            bot.lineto(p)
             sleep(.1)
             if not drawing:
                 _stop_drawing()

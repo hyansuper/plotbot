@@ -41,7 +41,7 @@ function press(e) {
 		_press([e.offsetX, e.offsetY])
 		drawing = true;
 		var p = canv2bot([e.offsetX, e.offsetY]);
-		socket.emit('down', p[0], p[1]);
+		socket.emit('down', p);
 	}
 }
 
@@ -58,7 +58,7 @@ function release(e){
 }
 
 function _drag(p) {
-	context.lineTo(p[0],p[1]);
+	context.lineTo(p[0], p[1]);
 	context.stroke();
 }
 
@@ -67,7 +67,7 @@ function drag(e){
 		_drag([e.offsetX, e.offsetY]);
 	    
 	    var p = canv2bot([e.offsetX, e.offsetY]);
-	    socket.emit('goto', p[0], p[1]);
+	    socket.emit('lineto', p);
 	}
 }
 
@@ -128,7 +128,7 @@ socket.on('down', function(p) {
 	}
 })
 
-socket.on('goto', function(p) {
+socket.on('lineto', function(p) {
 	if(!enabled){
 		_drag(bot2canv(p));
 	}
